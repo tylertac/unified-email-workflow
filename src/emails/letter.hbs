@@ -3,16 +3,27 @@ layout: layout.hbs
 subject: Letter Template
 ---
 
-<table {{> table-normal }}>
+<table {{> table-default }}>
   <tbody>
-
-    {{> head-bg-grey }}
-
-    {{> header-dos }}
-
-    {{> letter-body }}
-
+	  {{> head-bg-grey }}
+	  {{> header-dos }}
+		<tr>
+		  <td {{> td-default-outside }} style="padding:0px 10px 0px 10px">
+		    <table {{> table-default }}>
+		      <tbody>
+		        <tr>
+		          <td {{> td-default }}>
+		            <p>Hello! <br><br> This is the beginning of a letter email. You probably want something interesting to go here. Below is some nonsense but this should be deleted and replaced with the contents of your email: <br><br>Styling locator vw email units also user xml opt-out, open mso-line-height-rule api -webkit-supported newsletter goodbye alt, sleeves fast challenge goodness reference mailing help.</p>
+		          </td>
+		        </tr>
+	          {{> quote }}
+	        	{{> list }}
+						{{> image }}
+		        {{> signoff }}
+		      </tbody>
+		    </table>
+		  </td>
+		</tr>
 		{{> footer }}
-
   </tbody>
 </table>
