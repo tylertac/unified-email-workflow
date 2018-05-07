@@ -1,0 +1,22 @@
+---
+layout: layout.hbs
+subject: Event Template
+---
+
+<table {{> table-default }}>
+  <tbody>
+    {{> head-bg-grey-newsletter }}
+    {{> header-dos }}
+    <tr>
+      <td {{> td-default-outside }} style="padding:0px 10px 0px 10px">
+        <table {{> table-default }}>
+          <tbody>
+            {{> two-column }}
+            {{> three-column }}
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    {{> footer }}
+  </tbody>
+</table>
