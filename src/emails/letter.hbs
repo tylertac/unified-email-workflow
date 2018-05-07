@@ -3,83 +3,16 @@ layout: layout.hbs
 subject: Letter Template
 ---
 
-<style type="text/css">
-
-
-    /* CLIENT-SPECIFIC STYLES */
-	body {font-family: 'Nunito', sans-serif;}
-    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-    img { -ms-interpolation-mode: bicubic; }
-		li { mso-special-format:bullet; list-style: decimal; color:#002d43; }
-
-    /* RESET STYLES */
-    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
-    table { border-collapse: collapse !important; }
-    body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
-		p {
-			/* padding-top:14px;  */
-			font-size: 14px;
-			color: #002d43
-		}
-
-		.header {
-        text-align: left !important;
-    }
-
-    /* MOBILE STYLES */
-    @media screen and (max-width:600px){
-        h1 {
-            font-size: 32px !important;
-            line-height: 32px !important;
-        }
-		span.team {
-		 	display:block !important;
-		 }
-		span.line {
-		 	display:none !important;
-		 }
-
-    }
-
-	 @media screen and (max-width: 480px){
-
-     .header-block th {
-        display: block;
-     }
-
-     .left {
-       border-radius:4px 4px 0px 0px !important;
-       padding-bottom: 0px !important;
-     }
-
-     .right {
-       width: 100% !important;
-       border-radius:0px !important;
-       padding: 0px !important;
-     }
-
-		 .logo {
-		 	text-align: left !important;
-			width:28% !important;
-      margin-left: 20px;
-		 }
-
-	 }
-
-  /*   ANDROID CENTER FIX
-    div[style*="margin: 16px 0;"] { margin: 0 !important; } */
-</style>
-
-
 <table {{> table-normal }}>
   <tbody>
 
     {{> head-bg-grey }}
 
-    {{> header }}
+    {{> header-dos }}
 
-    
+    {{> letter-body }}
+
+		{{> footer }}
 
   </tbody>
 </table>
