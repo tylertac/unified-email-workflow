@@ -1,0 +1,38 @@
+---
+layout: layout.hbs
+subject: Grid Template
+---
+
+<table {{> table-default }}>
+  <tbody>
+    {{> head-bg-grey }}
+    {{> header-dos-product text='Release Notes' }}
+    <tr>
+      <td {{> td-default-outside }} style="padding:0px 10px 0px 10px" >
+        <table {{> table-default }}>
+          <tr>
+            <td {{> td-default }}>
+              {{> notice type='info' text='<strong>Release Notes</strong> XX/XX/XXXX' }}
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td {{> td-default-outside }} style="padding:0px 10px 0px 10px">
+        <table {{> table-default }}>
+          <tbody>
+            {{> body-copy }}
+            {{> list }}
+            {{> image }}
+            {{> list }}
+            {{> image }}
+            {{> button }}
+            {{> signoff }}
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    {{> footer }}
+  </tbody>
+</table>

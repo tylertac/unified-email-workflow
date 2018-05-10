@@ -6,20 +6,23 @@ subject: Grid Template
 <table {{> table-default }}>
   <tbody>
     {{> head-bg-grey }}
-    {{> header-dos }}
+    {{> header-dos-engineering }}
+    <tr>
+      <td {{> td-default-outside }} style="padding:0px 10px 0px 10px" >
+        <table {{> table-default }}>
+          <tr>
+            <td {{> td-default }}>
+              {{> notice type='warning' text='<strong>Maintence Window End</strong>' }}
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
     <tr>
       <td {{> td-default-outside }} style="padding:0px 10px 0px 10px">
         <table {{> table-default }}>
           <tbody>
             {{> body-copy }}
-            <tr>
-              <td {{> td-default-outside }}>
-                {{> table-release-notes-sample }}
-              </td>
-            </tr>
-            {{> list }}
-            {{> quote }}
-            {{> image }}
             {{> signoff }}
           </tbody>
         </table>
