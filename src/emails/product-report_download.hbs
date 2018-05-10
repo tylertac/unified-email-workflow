@@ -1,0 +1,35 @@
+---
+layout: layout.hbs
+subject: Product
+---
+
+<table {{> table-default }}>
+  <tbody>
+    {{> head-bg-grey }}
+    {{> header-dos-product text='Report Download' }}
+    <tr>
+      <td {{> td-default-outside }} style="padding:0px 10px 0px 10px" >
+        <table {{> table-default }}>
+          <tr>
+            <td {{> td-default }}>
+              {{> notice type='danger' text='<strong>Your report failed to generate due to the following issue:</strong>' }}
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td {{> td-default-outside }} style="padding:0px 10px 0px 10px">
+        <table {{> table-default }}>
+          <tbody>
+            {{> add-copy text='Display Error Here. <br><br> If you need more assistance the <a href="#">contact us</a>.' }}
+            {{> list }}
+            {{> button }}
+            {{> signoff }}
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    {{> footer }}
+  </tbody>
+</table>
