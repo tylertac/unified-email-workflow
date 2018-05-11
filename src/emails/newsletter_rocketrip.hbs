@@ -1,24 +1,35 @@
 ---
 layout: layout.hbs
-subject: Event Template
+subject: Rocketrip
 ---
 
 <table {{> table-default }}>
   <tbody>
-    {{> head-bg-grey-newsletter }}
+    {{> head-bg-grey-newsletter image='../img/rocketrip.png' width='25%' }}
     <tr>
       <td {{> td-default-outside }} style="padding:0px 10px 0px 10px">
         <table {{> table-default }}>
           <tbody>
             {{> headline-newsletter }}
+
             {{> section-header }}
             {{> image-text-full }}
+
             {{> section-header }}
             {{> two-column-text }}
-            {{> section-header }}
-            {{> three-column }}
+
             {{> section-header }}
             {{> two-column }}
+
+            {{> section-header }}
+            {{> image-text-full }}
+
+            {{> section-header }}
+            {{> two-column-text }}
+
+            {{> section-header }}
+            {{> image-text-full }}
+
             {{> callout }}
           </tbody>
         </table>

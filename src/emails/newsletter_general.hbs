@@ -1,0 +1,29 @@
+---
+layout: layout.hbs
+subject: Event Template
+---
+
+<table {{> table-default }}>
+  <tbody>
+    {{> head-bg-grey-newsletter image='http://via.placeholder.com/125x60' }}
+    <tr>
+      <td {{> td-default-outside }} style="padding:0px 10px 0px 10px">
+        <table {{> table-default }}>
+          <tbody>
+            {{> headline-newsletter }}
+            {{> section-header }}
+            {{> image-text-full }}
+            {{> section-header }}
+            {{> two-column-text }}
+            {{> section-header }}
+            {{> three-column }}
+            {{> section-header }}
+            {{> two-column }}
+            {{> callout }}
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    {{> footer-center }}
+  </tbody>
+</table>

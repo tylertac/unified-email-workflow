@@ -1,0 +1,26 @@
+---
+layout: layout.hbs
+subject: Grid Template
+---
+
+<table {{> table-default }}>
+  <tbody>
+    {{> head-bg-grey }}
+    {{> header-dos }}
+    <tr>
+      <td {{> td-default-outside }} style="padding:0px 10px 0px 10px">
+        <table {{> table-default }}>
+          <tbody>
+            {{> body-copy }}
+            {{> css-table_two-column }}
+            {{> list }}
+            {{> quote }}
+            {{> image }}
+            {{> signoff }}
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    {{> footer }}
+  </tbody>
+</table>
