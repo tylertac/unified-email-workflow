@@ -1,27 +1,23 @@
 ---
 layout: layout.hbs
-subject: Two Column
+subject: Event Template
 ---
 
 <table {{> table-default }}>
   <tbody>
     {{> head-bg-grey }}
-    {{> header-dos }}
     <tr>
       <td {{> td-default-outside }} style="padding:0px 10px 0px 10px">
         <table {{> table-default }}>
           <tbody>
-            {{> body-copy }}
-            {{> list }}
-            {{> event-css-table }}
-            {{> button }}
-            {{> quote }}
-            {{> image }}
-            {{> signoff }}
+            {{> headline-newsletter }}
+            {{> picture-text }}
+            {{> text-picture }}
+            {{> picture-text }}
           </tbody>
         </table>
       </td>
     </tr>
-    {{> footer }}
+    {{> footer-center }}
   </tbody>
 </table>
